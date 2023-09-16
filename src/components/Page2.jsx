@@ -4,7 +4,7 @@ import reactLogo from "../assets/react-logo.png";
 import androidLogo from "../assets/android-studio-logo.png";
 import sqlLogo from "../assets/sql-logo.png";
 
-const Page2 = ({ indexPage2, indexPage1 }) => {
+const Page2 = ({ indexPage3, indexPage1 }) => {
   const [showMore1, setShowMore1] = useState(false);
   const [showMore2, setShowMore2] = useState(false);
   const [showMore3, setShowMore3] = useState(false);
@@ -27,26 +27,27 @@ const Page2 = ({ indexPage2, indexPage1 }) => {
     setShowMore2(false);
   };
 
-  const handleShowMoreP2 = () => {
-    indexPage2(2);
+  const handlePage3 = () => {
+    indexPage3(2);
   };
 
-  const handleShowMoreP1 = () => {
+  const handlePage1 = () => {
     indexPage1(0);
   };
 
   return (
     <section className="container2">
-      <i className="bi bi-caret-up-square-fill" onClick={handleShowMoreP1}></i>
+      <i className="bi bi-caret-up-square-fill" onClick={handlePage1}></i>
       <h1>Tecnologías más utilizadas:</h1>
       <section className="tech-logos">
         <section className="show-more">
           <section className={`desc ${showMore1 ? "descActive" : ""}`}>
             <h2>React JS</h2>
             <p>
-              Es una librería en la que he podido realizar algunos proyectos
-              tanto personales como cooperativos. De hecho mi portafolio está
-              hecho con esta tecnología.
+              Esta librería ha sido fundamental en la realización de varios
+              proyectos, tanto a nivel personal como en colaboración con otros.
+              De hecho, mi portafolio se ha construido utilizando esta
+              tecnología.
             </p>
           </section>
           <img
@@ -70,9 +71,9 @@ const Page2 = ({ indexPage2, indexPage1 }) => {
           <section className={`desc ${showMore2 ? "descActive" : ""}`}>
             <h2>Android Studio Java</h2>
             <p>
-              Con esta herramienta he tenido la oportunidad de formar parte de
-              un proyecto colaborativo en la universidad, como otros tantos
-              individuales.
+              Gracias a esta herramienta, he tenido la oportunidad de participar
+              en proyectos colaborativos en la universidad, así como en
+              numerosos proyectos individuales.
             </p>
           </section>
           <img
@@ -96,8 +97,8 @@ const Page2 = ({ indexPage2, indexPage1 }) => {
           <section className={`desc ${showMore3 ? "descActive" : ""}`}>
             <h2>SQL Server</h2>
             <p>
-              Tengo los conceptos apropiados para la realización de consultas en
-              bases de datos relacionales.
+              Poseo los conocimientos necesarios para estructurar, normalizar y
+              llevar a cabo consultas en bases de datos relacionales.
             </p>
           </section>
           <img
@@ -120,7 +121,7 @@ const Page2 = ({ indexPage2, indexPage1 }) => {
       </section>
       <i
         className="bi bi-caret-down-square-fill"
-        onClick={handleShowMoreP2}
+        onClick={handlePage3}
       ></i>
     </section>
   );

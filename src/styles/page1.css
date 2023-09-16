@@ -5,7 +5,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background: #6060ff;
+    background: #2596be;
     overflow: hidden;
 }
 
@@ -14,7 +14,7 @@
     right: 0;
     width: 50%;
     height: 100vh;
-    background: #291dae;
+    background: linear-gradient(to bottom, #2596be, #525252);
     transform: skew(-15deg);
     transform-origin: top;
     z-index: 1;
@@ -32,20 +32,22 @@
     font-size: 3rem;
     color: #ffffff;
     text-shadow: 2px 2px 2px black;
+    border-bottom: 2px solid #6dbbd7;
+    padding-bottom: 1.5%;
 }
 
 .picture-cont {
     position: absolute;
     right: 0;
-    width: 540px;
-    height: 320px;
+    width: 520px;
+    height: 290px;
     border-radius: 10px 0px 0px 10px;
-    background: #6060ff;
+    background: linear-gradient(to left, #2596be, #525252);
 }
 
 .picture {
-    width: 300px;
-    height: 300px;
+    width: 250px;
+    height: 250px;
     border-radius: 50%;
     overflow: hidden;
     box-shadow: 3px 3px 3px black;
@@ -64,23 +66,22 @@
 }
 
 .description h2 {
-    font-size: 1.7rem;
+    font-size: 2rem;
     color: white;
     text-shadow: 2px 2px 2px black;
     position: absolute;
-    left: 17%;
-    bottom: 58%;
-    border-top: 2px solid rgb(72, 55, 255);
+    left: 19%;
+    bottom: 61%;
     padding-top: 4px;
 }
 
 .description p {
-    width: 40%;
+    width: 75%;
     text-align: left;
-    margin-left: 17%;
+    margin-left: 18%;
+    margin-top: 2%;
     font-size: 1.2rem;
     color: rgb(249, 249, 249);
-    background: rgb(41, 41, 41);
     padding: 10px;
     border-radius: 10px;
 }
@@ -90,12 +91,12 @@
     font-size: 3.5rem;
     margin-top: .5%;
     margin-bottom: .5%;
-    color: #4141ff;
+    color: #ababab;
     text-shadow: 2px 2px 2px black;
     cursor: pointer;
     transition: .4s ease-in-out;
 }
 
 .bi-caret-down-square-fill:hover, .bi-caret-up-square-fill:hover {
-    color: #7e72ff;
+    color: #858585;
 }

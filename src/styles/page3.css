@@ -1,0 +1,16 @@
+.container3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(to bottom, #525252, #2596be);
+}
+
+.container3 h1{
+    font-size: 4rem;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+}
+

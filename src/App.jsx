@@ -3,6 +3,7 @@ import './App.css'
 import 'bootstrap-icons/font/bootstrap-icons.css'
 import Page1 from './components/Page1'
 import Page2 from './components/Page2'
+import Page3 from './components/Page3'
 
 
 function App() {
@@ -32,15 +33,23 @@ function App() {
     }
   };
 
-  const handleShowMore = (index) => {
+  const handlePage = (index) => {
     scrollToSection(index)
   }
 
-  const handleShowMoreP1 = (index) => {
-    scrollToSection(index)
-  }
+  // const handleShowMoreP1 = (index) => {
+  //   scrollToSection(index)
+  // }
 
-  const sections = [<Page1 indexPage1={handleShowMore} />, <Page2 indexPage1={handleShowMoreP1} />]
+  // const handleShowMoreP2 = (index) => {
+  //   scrollToSection(index)
+  // }
+
+  // const handlePage3 = (index) => {
+  //   scrollToSection(index)
+  // }
+  
+  const sections = [<Page1 indexPage2={handlePage} />, <Page2 indexPage1={handlePage} indexPage3={handlePage} />, <Page3 indexPage2={handlePage} />]
 
   return (
     <section>
