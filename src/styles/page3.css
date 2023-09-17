@@ -105,7 +105,7 @@
 }
 
 .project-window p{
-    font-size: 1.5rem;
+    font-size: 1.2rem;
 }
 
 .project-window-active{
@@ -122,8 +122,36 @@
     cursor: pointer;
     color: #303030;
     transition: .5s;
+    z-index: 5;
 }
 
 .bi-x-circle:hover {
     color: #b60000;
+}
+
+.video-default{
+    width: 500px;
+    height: 250px;
+    transition: .5s;
+}
+
+.video{
+    position: absolute;
+    width: 95%;
+    height: 90%;
+}
+
+.bi-arrows-angle-contract{
+    position: absolute;
+    z-index: 5;
+    color: white;
+    font-size: 2rem;
+    left: 30px;
+    top: 20px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.bi-arrows-angle-contract:hover{
+    transform: scale(0.6);
 }
