@@ -1,4 +1,5 @@
 .container3{
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -14,3 +15,115 @@
     text-shadow: 2px 2px 2px black;
 }
 
+.projects{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.project{
+    width: 250px;
+    height: 320px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    background: #085794;
+    border-radius: 10px;
+    color: white;
+    position: relative;
+    cursor: pointer;
+    box-shadow: 3px 3px 5px black;
+}
+
+.project img{
+    width: 100%;
+    object-fit: cover;
+}
+
+.project-hover{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    background: #00000074;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transform: translateX(-250px);
+    transition: .4s;
+}
+
+.project-hover h3{
+    font-size: 1.8rem;
+}
+
+.bi-hand-index-thumb-fill{
+    font-size: 3rem;
+}
+
+.project-hover span{
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.project:hover>.project-hover{
+    opacity: 1;
+    transform: translateX(0px);
+}
+
+.project-window{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 70vw;
+    height: 80vh;
+    z-index: 0;
+    background: #2596be;
+    color: white;
+    border-radius: 10px;
+    opacity: 0;
+    transform: translateX(-50%);
+    transition: .5s;
+    left: 50%;
+    top: 50%;
+    padding: 30px;
+    box-shadow: 3px 3px 5px black;
+}
+
+.project-window h2{
+    font-size: 3rem;
+    text-shadow: 2px 2px 2px black;
+}
+
+.project-window p{
+    font-size: 1.5rem;
+}
+
+.project-window-active{
+    opacity: 1;
+    transform: translate(-50%, -50%);
+    z-index: 4;
+}
+
+.bi-x-circle{
+    position: absolute;
+    left: 96%;
+    bottom: 93%;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #303030;
+    transition: .5s;
+}
+
+.bi-x-circle:hover {
+    color: #b60000;
+}
