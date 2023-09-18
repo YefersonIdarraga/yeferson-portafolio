@@ -100,3 +100,21 @@
 .bi-caret-down-square-fill:hover, .bi-caret-up-square-fill:hover {
     color: #858585;
 }
+
+.git{
+    position: fixed;
+    font-size: 1.3rem;
+    color: white;
+    z-index: 6;
+    left: 10px;
+    top: 10px;
+    text-decoration: none;
+}
+
+.bi-github{
+    font-size: 2rem;
+}
+
+.git:hover>.bi-github{
+    color: #2b2b2b;
+}

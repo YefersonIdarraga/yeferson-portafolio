@@ -9,6 +9,14 @@
     background: linear-gradient(to bottom, #525252, #2596be);
 }
 
+.sub-cont3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 80%;
+}
+
 .container3 h1{
     font-size: 4rem;
     color: white;
@@ -21,18 +29,19 @@
     align-items: center;
     justify-content: space-evenly;
     flex-wrap: wrap;
+    gap: 20px;
     margin-top: 30px;
 }
 
 .project{
-    width: 250px;
-    height: 320px;
+    width: 200px;
+    height: 280px;
     overflow: hidden;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
-    background: #085794;
+    background: #00345b;
     border-radius: 10px;
     color: white;
     position: relative;
@@ -58,6 +67,7 @@
     opacity: 0;
     transform: translateX(-250px);
     transition: .4s;
+    text-align: center;
 }
 
 .project-hover h3{
@@ -154,4 +164,47 @@
 
 .bi-arrows-angle-contract:hover{
     transform: scale(0.6);
+}
+
+.project-suculenta img{
+    width: 160%;
+}
+
+.project-window img{
+    margin-top: 10px;
+    width: 70%;
+    border-radius: 10px;
+}
+
+.project-window a{
+    color: #dcdcdc;
+    transition: .3s ease-in-out;
+}
+
+.project-window a:hover{
+    color: white;
+}
+
+.project-suculenta{
+    background: #525252;
+}
+
+.project-suculenta h1{
+    text-align: center;
+}
+
+.bi-arrows-angle-contract-is{
+    color: black;
+}
+
+.project-worlds{
+    background: #181818;
+}
+
+.project-survey{
+    background: #00a19b;
+}
+
+.project-worlds img{
+    width: 120%;
 }

@@ -9,6 +9,13 @@ const Page1 = ({ indexPage2 }) => {
 
   return (
     <section className="container1">
+      <a className="git"
+        href="https://github.com/YefersonIdarraga"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <i class="bi bi-github"></i> GitHub
+      </a>
       <div className="division"></div>
       <section className="profile">
         <h1>Yeferson Idarraga Álvarez</h1>
@@ -24,13 +31,16 @@ const Page1 = ({ indexPage2 }) => {
           en el campo laboral. Poseo conocimientos en áreas como desarrollo
           Front-End y administración de bases de datos en SQL Server. Mi
           conjunto de habilidades incluye competencias en HTML, CSS, JavaScript
-          y Git, además de contar con un nivel intermedio de inglés.<br/><br/> Tengo la
-          capacidad de desarrollar programas informáticos que son aplicables a
-          las actividades y estrategias empresariales.<br/><br/> Mi experiencia abarca
-          desde el análisis y diseño hasta la implementación de aplicaciones,
-          así como el mantenimiento de programas en entornos Windows y para la
-          web. Estoy ansioso por aplicar mis conocimientos y habilidades para
-          contribuir al éxito de cualquier proyecto en el que me involucre.
+          y Git, además de contar con un nivel intermedio de inglés.
+          <br />
+          <br /> Tengo la capacidad de desarrollar programas informáticos que
+          son aplicables a las actividades y estrategias empresariales.
+          <br />
+          <br /> Mi experiencia abarca desde el análisis y diseño hasta la
+          implementación de aplicaciones, así como el mantenimiento de programas
+          en entornos Windows y para la web. Estoy ansioso por aplicar mis
+          conocimientos y habilidades para contribuir al éxito de cualquier
+          proyecto en el que me involucre.
         </p>
       </section>
       <i className="bi bi-caret-down-square-fill" onClick={handlePage}></i>

@@ -4,6 +4,7 @@ import 'bootstrap-icons/font/bootstrap-icons.css'
 import Page1 from './components/Page1'
 import Page2 from './components/Page2'
 import Page3 from './components/Page3'
+import Page4 from './components/Page4'
 
 
 function App() {
@@ -36,20 +37,8 @@ function App() {
   const handlePage = (index) => {
     scrollToSection(index)
   }
-
-  // const handleShowMoreP1 = (index) => {
-  //   scrollToSection(index)
-  // }
-
-  // const handleShowMoreP2 = (index) => {
-  //   scrollToSection(index)
-  // }
-
-  // const handlePage3 = (index) => {
-  //   scrollToSection(index)
-  // }
   
-  const sections = [<Page1 indexPage2={handlePage} />, <Page2 indexPage1={handlePage} indexPage3={handlePage} />, <Page3 indexPage2={handlePage} />]
+  const sections = [<Page1 indexPage2={handlePage} />, <Page2 indexPage1={handlePage} indexPage3={handlePage} />, <Page3 indexPage2={handlePage} indexPage4={handlePage} />, <Page4 indexPage3={handlePage} />]
 
   return (
     <section>
