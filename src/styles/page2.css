@@ -103,3 +103,40 @@
 .btn.active {
     background: #6dbbd7;
 }
+
+@media (max-width: 479px) {
+    .container2 {
+        height: auto;
+    }
+
+    .container2 h1 {
+        font-size: 2rem;
+        margin-top: 5%;
+        text-align: center;
+    }
+
+    .tech-logos {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        gap: 0;
+        height: auto;
+    }
+
+    .tech-logos img {
+        width: 50%;
+    }
+
+    .show-more {
+        width: 100%;
+        height: 300px;
+        position: relative;
+        justify-content: space-around;
+    }
+
+    .desc {
+        width: auto;
+        height: 70%;
+        top: 0;
+    }
+}

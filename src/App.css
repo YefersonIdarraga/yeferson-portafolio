@@ -16,3 +16,18 @@ body{
 .indicator div{
   color: #6dbbd7;
 }
+
+@media (max-width: 479px) {
+  body{
+    overflow: visible;
+  }
+
+  .indicator{
+    display: none;
+  }
+
+  .bi-caret-down-square-fill, .bi-caret-up-square-fill{
+    display: none;
+  }
+
+}

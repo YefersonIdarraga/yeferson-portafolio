@@ -40,8 +40,8 @@ const Page1 = ({ indexPage2 }) => {
             en el campo laboral. Poseo conocimientos en áreas como desarrollo
             Front-End y administración de bases de datos en SQL Server. Mi
             conjunto de habilidades incluye competencias en HTML, CSS,
-            JavaScript y Git, además de contar con un nivel intermedio de
-            inglés.
+            JavaScript, React, Android Studio y Git, además de contar con un
+            nivel intermedio de inglés.
             <br />
             <br /> Tengo la capacidad de desarrollar programas informáticos que
             son aplicables a las actividades y estrategias empresariales.

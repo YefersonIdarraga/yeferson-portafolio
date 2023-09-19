@@ -5,6 +5,7 @@ const Project1 = ({ showInfo1, setMoreInfo1 }) => {
   const videoRef = useRef(null);
   const handleClose = () => {
     setMoreInfo1(false);
+    document.body.style.overflow = 'auto';
     if (videoRef.current) {
       videoRef.current.pause();
     }

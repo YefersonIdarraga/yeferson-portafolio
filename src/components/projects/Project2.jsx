@@ -4,6 +4,7 @@ import mariaSuculentas from "../../assets/maria-suculentas.png";
 const Project2 = ({ showInfo2, setMoreInfo2 }) => {
   const handleClose = () => {
     setMoreInfo2(false);
+    document.body.style.overflow = 'auto';
   };
 
   return (

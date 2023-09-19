@@ -23,18 +23,43 @@ const Page3 = ({ indexPage2, indexPage4 }) => {
 
   const handleMoreInfo1 = () => {
     setMoreInfo1(true);
+    setMoreInfo2(false);
+    setMoreInfo3(false);
+    setMoreInfo4(false);
+    setMoreInfo5(false);
+    document.body.style.overflow = "hidden";
   };
   const handleMoreInfo2 = () => {
     setMoreInfo2(true);
+    setMoreInfo1(false);
+    setMoreInfo3(false);
+    setMoreInfo4(false);
+    setMoreInfo5(false);
+    document.body.style.overflow = "hidden";
   };
   const handleMoreInfo3 = () => {
     setMoreInfo3(true);
+    setMoreInfo1(false);
+    setMoreInfo2(false);
+    setMoreInfo4(false);
+    setMoreInfo5(false);
+    document.body.style.overflow = "hidden";
   };
   const handleMoreInfo4 = () => {
     setMoreInfo4(true);
+    setMoreInfo1(false);
+    setMoreInfo2(false);
+    setMoreInfo3(false);
+    setMoreInfo5(false);
+    document.body.style.overflow = "hidden";
   };
   const handleMoreInfo5 = () => {
     setMoreInfo5(true);
+    setMoreInfo1(false);
+    setMoreInfo2(false);
+    setMoreInfo3(false);
+    setMoreInfo4(false);
+    document.body.style.overflow = "hidden";
   };
 
   const handlePage4 = () => {
