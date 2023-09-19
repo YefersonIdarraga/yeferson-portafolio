@@ -30,7 +30,6 @@ const Page1 = ({ indexPage2 }) => {
             <h1>Yeferson Idarraga Álvarez</h1>
             <h2>Desarrollador de Software</h2>
           </section>
-          <section className="picture-cont"></section>
           <section className="picture">
             <img src={profile} alt="Profile picture" />
           </section>
