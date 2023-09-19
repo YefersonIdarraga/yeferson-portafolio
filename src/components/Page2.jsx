@@ -119,10 +119,7 @@ const Page2 = ({ indexPage3, indexPage1 }) => {
           </button>
         </section>
       </section>
-      <i
-        className="bi bi-caret-down-square-fill"
-        onClick={handlePage3}
-      ></i>
+      <i className="bi bi-caret-down-square-fill" onClick={handlePage3}></i>
     </section>
   );
 };

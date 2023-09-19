@@ -1,4 +1,4 @@
-.container2{
+.container2 {
     position: relative;
     display: flex;
     flex-direction: column;
@@ -10,13 +10,13 @@
     background: linear-gradient(to bottom, #2596be, #525252);
 }
 
-.container2 h1{
+.container2 h1 {
     font-size: 4rem;
     color: white;
     text-shadow: 2px 2px 2px black;
 }
 
-.tech-logos{
+.tech-logos {
     display: flex;
     align-items: baseline;
     justify-content: center;
@@ -26,11 +26,11 @@
     margin-top: 70px;
 }
 
-.tech-logos img{
+.tech-logos img {
     width: 100%;
 }
 
-.show-more{
+.show-more {
     width: calc(65% / 3);
     display: flex;
     flex-direction: column;
@@ -39,25 +39,25 @@
     gap: 20px;
 }
 
-.show-more button{
+.show-more button {
     display: flex;
     gap: 10px;
     font-size: 1.6rem;
     padding: 10px;
     border-radius: 10px;
     border: none;
-    cursor: pointer;
+    cursor: url('../assets/cursor-pointer.png'), pointer;
     color: white;
     background: #2596be;
     transition: .4s ease-in-out;
     z-index: 5;
 }
 
-.show-more button:hover{
+.show-more button:hover {
     background: #6dbbd7;
 }
 
-.desc{
+.desc {
     position: absolute;
     width: 30%;
     height: 30%;
@@ -76,30 +76,30 @@
     transition: .5s;
 }
 
-.desc h2{
+.desc h2 {
     text-shadow: 2px 2px 2px black;
 }
 
-.desc p{
+.desc p {
     font-size: 1.1rem;
     font-weight: 500;
 }
 
-.descActive{ 
+.descActive {
     transform: scale(1);
 }
 
-.t-logo{
+.t-logo {
     transform: translateY(0px);
     opacity: 1;
     transition: .5s;
 }
 
-.logoActive{
+.logoActive {
     transform: translateY(100px);
     opacity: 0;
 }
 
-.btn.active{
+.btn.active {
     background: #6dbbd7;
 }

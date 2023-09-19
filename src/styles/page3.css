@@ -1,4 +1,4 @@
-.container3{
+.container3 {
     position: relative;
     display: flex;
     flex-direction: column;
@@ -9,7 +9,7 @@
     background: linear-gradient(to bottom, #525252, #2596be);
 }
 
-.sub-cont3{
+.sub-cont3 {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -17,13 +17,13 @@
     height: 80%;
 }
 
-.container3 h1{
+.container3 h1 {
     font-size: 4rem;
     color: white;
     text-shadow: 2px 2px 2px black;
 }
 
-.projects{
+.projects {
     width: 100%;
     display: flex;
     align-items: center;
@@ -33,7 +33,7 @@
     margin-top: 30px;
 }
 
-.project{
+.project {
     width: 200px;
     height: 280px;
     overflow: hidden;
@@ -45,16 +45,16 @@
     border-radius: 10px;
     color: white;
     position: relative;
-    cursor: pointer;
+    cursor: url('../assets/cursor-pointer.png'), pointer;
     box-shadow: 3px 3px 5px black;
 }
 
-.project img{
+.project img {
     width: 100%;
     object-fit: cover;
 }
 
-.project-hover{
+.project-hover {
     position: absolute;
     display: flex;
     flex-direction: column;
@@ -70,25 +70,25 @@
     text-align: center;
 }
 
-.project-hover h3{
+.project-hover h3 {
     font-size: 1.8rem;
 }
 
-.bi-hand-index-thumb-fill{
+.bi-hand-index-thumb-fill {
     font-size: 3rem;
 }
 
-.project-hover span{
+.project-hover span {
     text-align: center;
     font-size: 1.5rem;
 }
 
-.project:hover>.project-hover{
+.project:hover>.project-hover {
     opacity: 1;
     transform: translateX(0px);
 }
 
-.project-window{
+.project-window {
     position: absolute;
     display: flex;
     flex-direction: column;
@@ -109,27 +109,27 @@
     box-shadow: 3px 3px 5px black;
 }
 
-.project-window h2{
+.project-window h2 {
     font-size: 3rem;
     text-shadow: 2px 2px 2px black;
 }
 
-.project-window p{
+.project-window p {
     font-size: 1.2rem;
 }
 
-.project-window-active{
+.project-window-active {
     opacity: 1;
     transform: translate(-50%, -50%);
     z-index: 4;
 }
 
-.bi-x-circle{
+.bi-x-circle {
     position: absolute;
     left: 96%;
     bottom: 93%;
     font-size: 1.5rem;
-    cursor: pointer;
+    cursor: url('../assets/cursor-pointer.png'), pointer;
     color: #303030;
     transition: .5s;
     z-index: 5;
@@ -139,72 +139,73 @@
     color: #b60000;
 }
 
-.video-default{
+.video-default {
     width: 500px;
     height: 250px;
     transition: .5s;
 }
 
-.video{
+.video {
     position: absolute;
     width: 95%;
     height: 90%;
 }
 
-.bi-arrows-angle-contract{
+.bi-arrows-angle-contract {
     position: absolute;
     z-index: 5;
     color: white;
     font-size: 2rem;
     left: 30px;
     top: 20px;
-    cursor: pointer;
+    cursor: url('../assets/cursor-pointer.png'), pointer;
     transition: .3s;
 }
 
-.bi-arrows-angle-contract:hover{
+.bi-arrows-angle-contract:hover {
     transform: scale(0.6);
 }
 
-.project-suculenta img{
+.project-suculenta img {
     width: 160%;
 }
 
-.project-window img{
+.project-window img {
     margin-top: 10px;
     width: 70%;
     border-radius: 10px;
 }
 
-.project-window a{
+.project-window a {
     color: #dcdcdc;
     transition: .3s ease-in-out;
+    cursor: url('../assets/cursor-pointer.png'), pointer;
 }
 
-.project-window a:hover{
+.project-window a:hover {
     color: white;
 }
 
-.project-suculenta{
+.project-suculenta {
     background: #525252;
 }
 
-.project-suculenta h1{
+.project-suculenta h1 {
     text-align: center;
 }
 
-.bi-arrows-angle-contract-is{
+.bi-arrows-angle-contract-is {
     color: black;
 }
 
-.project-worlds{
+.project-worlds {
     background: #181818;
 }
 
-.project-survey{
+.project-survey {
     background: #00a19b;
 }
 
-.project-worlds img{
+.project-worlds img {
     width: 120%;
 }

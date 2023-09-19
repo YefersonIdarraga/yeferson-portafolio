@@ -1,11 +1,10 @@
-import { useState, useEffect } from 'react'
-import './App.css'
-import 'bootstrap-icons/font/bootstrap-icons.css'
-import Page1 from './components/Page1'
-import Page2 from './components/Page2'
-import Page3 from './components/Page3'
-import Page4 from './components/Page4'
-
+import { useState, useEffect } from "react";
+import "./App.css";
+import "bootstrap-icons/font/bootstrap-icons.css";
+import Page1 from "./components/Page1";
+import Page2 from "./components/Page2";
+import Page3 from "./components/Page3";
+import Page4 from "./components/Page4";
 
 function App() {
   const [currentSection, setCurrentSection] = useState(0);
@@ -35,10 +34,15 @@ function App() {
   };
 
   const handlePage = (index) => {
-    scrollToSection(index)
-  }
-  
-  const sections = [<Page1 indexPage2={handlePage} />, <Page2 indexPage1={handlePage} indexPage3={handlePage} />, <Page3 indexPage2={handlePage} indexPage4={handlePage} />, <Page4 indexPage3={handlePage} />]
+    scrollToSection(index);
+  };
+
+  const sections = [
+    <Page1 indexPage2={handlePage} />,
+    <Page2 indexPage1={handlePage} indexPage3={handlePage} />,
+    <Page3 indexPage2={handlePage} indexPage4={handlePage} />,
+    <Page4 indexPage3={handlePage} />,
+  ];
 
   return (
     <section>
@@ -46,7 +50,9 @@ function App() {
         {sections.map((section, index) => (
           <div
             key={index}
-            className={`bi ${currentSection === index ? "bi-circle-fill" : "bi-circle"}`}
+            className={`bi circle ${
+              currentSection === index ? "bi-circle-fill" : "bi-circle"
+            }`}
             onClick={() => scrollToSection(index)}
           />
         ))}
@@ -57,7 +63,7 @@ function App() {
         </div>
       ))}
     </section>
-  )
+  );
 }
 
-export default App
+export default App;

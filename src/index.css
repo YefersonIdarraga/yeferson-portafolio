@@ -6,3 +6,17 @@
   box-sizing: border-box;
   font-family: 'Roboto', sans-serif;
 }
+
+body{
+  cursor: url('./assets/cursor.png'), auto;
+}
+
+::selection {
+  background-color: #ababab;
+  color: #6a6a6a;
+}
+
+::-moz-selection {
+  background-color: #ababab;
+  color: #6a6a6a;
+}
