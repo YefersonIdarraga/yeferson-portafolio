@@ -5,7 +5,9 @@ const Project3 = ({ showInfo3, setMoreInfo3 }) => {
   const videoRef = useRef(null);
   const handleClose = () => {
     setMoreInfo3(false);
-    document.body.style.overflow = 'auto';
+    if (window.innerWidth <= 479) {
+      document.body.style.overflow = 'auto';
+    }
     if (videoRef.current) {
       videoRef.current.pause();
     }

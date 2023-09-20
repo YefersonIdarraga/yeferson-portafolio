@@ -59,4 +59,8 @@
         font-size: 2rem;
         padding: 10px;
     }
+
+    .pages {
+        z-index: 4;
+    }
 }

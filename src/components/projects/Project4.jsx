@@ -4,7 +4,9 @@ import worlds from "../../assets/worlds-22.png";
 const Project4 = ({ showInfo4, setMoreInfo4 }) => {
   const handleClose = () => {
     setMoreInfo4(false);
-    document.body.style.overflow = 'auto';
+    if (window.innerWidth <= 479) {
+      document.body.style.overflow = 'auto';
+    }
   };
   return (
     <section
