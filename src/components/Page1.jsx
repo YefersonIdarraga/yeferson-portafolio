@@ -15,14 +15,6 @@ const Page1 = ({ indexPage2 }) => {
 
   return (
     <section className="container1">
-      <a
-        className="git"
-        href="https://github.com/YefersonIdarraga"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <i class="bi bi-github github"></i> GitHub
-      </a>
       <div className="division"></div>
       <section className={`sub-cont1 ${animate ? "animate" : ""}`}>
         <section className="profile">

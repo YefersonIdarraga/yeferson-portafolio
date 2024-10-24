@@ -18,6 +18,43 @@ body{
   color: #6dbbd7;
 }
 
+.bi-caret-down-square-fill,
+.bi-caret-up-square-fill {
+    z-index: 3;
+    font-size: 3rem;
+    margin-top: .5%;
+    margin-bottom: .5%;
+    color: #ababab;
+    text-shadow: 2px 2px 2px black;
+    cursor: url('../assets/cursor-pointer.png'), pointer;
+    transition: .4s ease-in-out;
+}
+
+.bi-caret-down-square-fill:hover,
+.bi-caret-up-square-fill:hover {
+    color: #858585;
+}
+
+.gh-cv-cont {
+  position: fixed;
+  font-size: 1.3rem;
+  z-index: 6;
+  left: 10px;
+  top: 10px;
+}
+
+.git, .cv{
+  margin-left: 10px;
+  text-decoration: none;
+  color: white;
+  font-size: 1.5rem;
+  cursor: url('./assets/cursor-pointer.png'), pointer;
+}
+
+.git:hover>.bi-github, .cv:hover>.bi-file-earmark-person {
+  color: #2b2b2b;
+}
+
 @media (max-width: 479px) {
   body{
     overflow: visible;
@@ -31,4 +68,17 @@ body{
     display: none;
   }
 
+  .gh-cv-cont {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgb(23, 23, 23);
+    padding: 5px;
+    border-radius: 10px;
+    width: 98%;
+    height: 45px;
+    left: 3.5px;
+    top: 3.5px;
+    overflow: hidden;
+  }
 }

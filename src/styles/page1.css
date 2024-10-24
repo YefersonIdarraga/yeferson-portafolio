@@ -7,6 +7,7 @@
     justify-content: center;
     background: #2596be;
     overflow: hidden;
+    gap: 2%;
 }
 
 .sub-cont1 {
@@ -74,8 +75,8 @@
 .description {
     width: 100%;
     z-index: 2;
-    text-align: center;
-    margin-top: 1%;
+    text-align: justify;
+    margin-top: .3%;
 }
 
 .description p {
@@ -89,41 +90,7 @@
     border-radius: 10px;
 }
 
-.bi-caret-down-square-fill,
-.bi-caret-up-square-fill {
-    z-index: 3;
-    font-size: 3.5rem;
-    margin-top: .5%;
-    margin-bottom: .5%;
-    color: #ababab;
-    text-shadow: 2px 2px 2px black;
-    cursor: url('../assets/cursor-pointer.png'), pointer;
-    transition: .4s ease-in-out;
-}
 
-.bi-caret-down-square-fill:hover,
-.bi-caret-up-square-fill:hover {
-    color: #858585;
-}
-
-.git {
-    position: fixed;
-    font-size: 1.3rem;
-    color: white;
-    z-index: 6;
-    left: 10px;
-    top: 10px;
-    text-decoration: none;
-    cursor: url('../assets/cursor-pointer.png'), pointer;
-}
-
-.github {
-    font-size: 2rem;
-}
-
-.git:hover>.bi-github {
-    color: #2b2b2b;
-}
 
 @media (max-width: 479px) {
 
@@ -164,15 +131,6 @@
     .description p {
         width: 100%;
         margin-left: 0;
-    }
-
-    .git {
-        background: rgba(0, 0, 0, 0.694);
-        padding: 5px;
-        border-radius: 10px;
-        width: 45px;
-        height: 45px;
-        overflow: hidden;
     }
 
 }

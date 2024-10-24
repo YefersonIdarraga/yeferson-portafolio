@@ -46,6 +46,24 @@ function App() {
 
   return (
     <section>
+      <div className="gh-cv-cont">
+        <a
+          className="git"
+          href="https://github.com/YefersonIdarraga"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <i class="bi bi-github"></i> GitHub
+        </a>
+        <a
+          className="cv"
+          href="https://drive.google.com/file/d/1IBGOU7DdabAq3OoIjMOnkFtLvYW2pXwH/view?usp=sharing"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <i class="bi bi-file-earmark-person"></i> Hoja de vida
+        </a>
+      </div>
       <div className="indicator">
         {sections.map((section, index) => (
           <div
