@@ -48,6 +48,8 @@ const Project3 = ({ showInfo3, setMoreInfo3 }) => {
       <video
         className={`video-default ${video ? "video" : ""}`}
         controls
+        disablePictureInPicture
+        controlslist="nodownload noplaybackrate noremoteplayback nopictureinpicture"
         onClick={handleVideo}
         ref={videoRef}
       >

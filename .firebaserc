@@ -1,5 +1,8 @@
 {
   "projects": {
-    "default": "yeferson-portafolio"
-  }
+    "default": "yeferson-portafolio",
+    "portafolio": "yeferson-portafolio"
+  },
+  "targets": {},
+  "etags": {}
 }
